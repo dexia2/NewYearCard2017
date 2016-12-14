@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>年賀状(2017)</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Reico.K">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+    <style type="text/css">
+
+    * {
+      margin:0;
+      outline:0;
+      padding:0;
+      box-sizing:border-box;
+      font:inherit;
+      font-family:inherit;
+      font-size:100%;
+      font-style:inherit;
+      font-weight:inherit;
+      text-decoration:none;
+      vertical-align:baseline;
+    }
+
+    html {
+      font-size:62.5%;
+      font-family: "Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+      width:100%;
+      height:100%;
+    }
+
+    body {
+      font-size:10px;
+      font-size:1.0rem;
+      line-height:1;
+      position:relative;
+      text-align:center;
+      text-size-adjust:100%;
+      font-smoothing:antialiased;
+      width:100%;
+      height:100%;
+      background-color: #D6DCE5;
+    }
+
+    hr {
+      display:block;
+    }
+
+    blockquote, q {
+      quotes:none;
+    }
+
+    blockquote:before, blockquote:after, q:before, q:after {
+      content:'';
+      content:none;
+    }
+
+    .clearfix:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    .landscape{
+      height: 30%;
+      width: 100%;
+    }
+
+    .sky .snow {
+      position: absolute;
+    }
+
+    .sky .snow .crystal {
+      padding:50%;
+      border-width: 1px;
+      border-radius: 50%;
+      border-color: #41719C;
+      border-style: ridge;
+      background-color: #FFF;
+    }
+
+    .sky .snow.snow1 {
+      width: 4.25%;
+      top: 5%;
+      left: 5%;
+    }
+
+    .sky .snow.snow2 {
+      width: 2%;
+      top: 3%;
+      left: 20%;
+    }
+
+    .sky .snow.snow3 {
+      width: 2.5%;
+      top: 4.5%;
+      left: 23.5%;
+    }
+
+    .sky .snow.snow4 {
+      width: 3%;
+      top: 4.5%;
+      left: 80.5%;
+    }
+
+    .sky .snow.snow5 {
+      width: 3%;
+      top: 20.5%;
+      left: 90.5%;
+    }
+
+    .sky .snow.snow6 {
+      width: 2.5%;
+      top: 22.5%;
+      left: 10.5%;
+    }
+
+    .sky .snow.snow7 {
+      width: 4%;
+      top: 12.5%;
+      left: 90.5%;
+    }
+
+    .sky .snow.message-snow .snow-message {
+      position: absolute;
+      left: 32%;
+      top: 28%;
+      font-size: 3vw;
+    }
+
+    .sky .snow.message-snow.message-snow1 {
+      width: 7%;
+      top: 7.5%;
+      left: 25.5%;
+    }
+
+    .sky .snow.message-snow.message-snow2 {
+      width: 7%;
+      top: 12.5%;
+      left: 40.5%;
+    }
+
+    .sky .snow.message-snow.message-snow3 {
+      width: 7%;
+      top: 5.5%;
+      left: 55.5%;
+    }
+
+    .sky .snow.message-snow.message-snow4 {
+      width: 7%;
+      top: 13.5%;
+      left: 70.5%;
+    }
+
+    .content-box {
+      border-width: 1px;
+      border-radius: 3%;
+      border-color: #41719C;
+      border-style: ridge;
+      background-color: #FFF;
+    }
+
+    .content-rule {
+    	border-top: 1px dashed #5B9BD5;
+    }
+
+    .writings {
+      display: inline-block;
+      float: left;
+      margin-left: 5%;
+      margin-right: 2%;
+      width: 60%;
+    }
+
+    .writing .snow-man-container {
+      position: relative;
+    }
+
+    .writing .snow-man {
+      width : 10%;
+      height : auto;
+      max-width: 62px;
+      max-height: 94px;
+      position: absolute;
+      left: 4%;
+      top: 5%;
+      display: block;
+    }
+
+    .writing .writing-header {
+      margin-bottom: 20px;
+    }
+
+    .writing .writing-header .writing-date {
+      font-size: 1.5vw;
+      text-align: right;
+      padding-top: 10px;
+      padding-right: 40px;
+    }
+
+    .writing .writing-header .writing-title {
+      font-size: 2.5vw;
+      text-align: left;
+      padding-left: 20%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .writing .writing-content {
+      text-align: left;
+      font-size: 2vw;
+      line-height: 1.5;
+    }
+
+    .writing .free-space {
+      margin: 3%;
+      background-color:#DDD;
+      line-height: 1.5;
+    }
+
+    .writing .free-space:before{
+    content:"“";
+    font-size:600%;
+    line-height:1em;
+    font-family:"ＭＳ Ｐゴシック",sans-serif;
+    color:#999;
+    position:relative;
+    left:0;
+    top:0;
+    }
+
+    .sidebar {
+      display: inline-block;
+      float: left;
+      margin-left: 2%;
+      margin-right: 5%;
+      width: 26%;
+    }
+
+    .sidebar .content-box {
+      margin-bottom: 10%;
+    }
+
+    .sidebar .content-box .sidebar-header{
+      margin-bottom: 4%;
+    }
+
+    .sidebar .content-box .sidebar-header .sidebar-title {
+      font-size: 2vw;
+      text-align: center;
+      margin-top: 4%;
+      margin-bottom: 4%;
+    }
+
+    .sidebar .content-box .sidebar-content {
+      font-size: 1.5vw;
+      text-align: center;
+      line-height: 2;
+      font-family: "メイリオ", Meiryo, Osaka;
+    }
+
+    .sidebar .zodiac .zodiac-img {
+      width : 80%;
+      height : auto;
+      margin: 10%;
+    }
+
+    .content-footer {
+      float: left;
+      text-align: right;
+      width: 25%;
+      height: 4%;
+      position: relative;
+      margin-right: 5%;
+    }
+
+    .content-footer .footer-message {
+      position: absolute;
+  	  right: 0;
+  	  bottom: 0;
+      font-size: 1.5vw;
+      color: #008000;
+    }
+
+    </style>
+</head>
+<body>
+  <header class="landscape">
+    <section class="sky">
+      <div class="snows natural-snows">
+          <div class="snow snow1"><div class="crystal"></div></div>
+          <div class="snow snow2"><div class="crystal"></div></div>
+          <div class="snow snow3"><div class="crystal"></div></div>
+          <div class="snow snow4"><div class="crystal"></div></div>
+          <div class="snow snow5"><div class="crystal"></div></div>
+          <div class="snow snow6"><div class="crystal"></div></div>
+          <div class="snow snow7"><div class="crystal"></div></div>
+      </div>
+      <div class="snows message-snows">
+        <div class="snow message-snow message-snow1">
+          <div class="crystal"></div>
+          <div class="snow-message">笑</div>
+        </div>
+        <div class="snow message-snow message-snow2">
+          <div class="crystal"></div>
+          <div class="snow-message">門</div>
+        </div>
+        <div class="snow message-snow message-snow3">
+          <div class="crystal"></div>
+          <div class="snow-message">来</div>
+        </div>
+        <div class="snow message-snow message-snow4">
+          <div class="crystal"></div>
+          <div class="snow-message">福</div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="main-contents">
+    <section class="writings">
+      <article class="content-box writing">
+        <div class="snow-man-container">
+          <img src="http://www.wanpug.com/illust1947_thumb.gif" alt="雪だるま" class="snow-man"></img>
+        </div>
+        <header class="writing-header">
+          <div class="writing-date">
+            <time datetime="2017-1-1">２０１７年元旦</time>
+          </div>
+          <h1 class="writing-title">新年おめでとうございます</h1>
+          <hr class="content-rule"/>
+        </header>
+        <section class="writing-content">
+          <p>
+　明けましておめでとうございます。<br/>
+　昨年は大変お世話になりました。<br>
+          </p>
+          <blockquote class="free-space">
+            <br/><br/><br/><br/><br/>
+          </blockquote>
+        </section>
+      </article>
+    </section>
+    <section class="sidebar clearfix">
+      <aside class="content-box zodiac">
+        <img src="http://postcard.chu.jp/nenga-img/big/illust07_jpg.jpg" alt="酉のイラスト" class="zodiac-img"></img>
+      </aside>
+      <aside class="content-box profile">
+        <div class="sidebar-header" >
+          <h2 class="sidebar-title">プロフィール</h2>
+          <hr class="content-rule"/>
+        </div>
+        <div class="sidebar-content" >
+          <p>住所<br/>名前<br/><br/><br/></p>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="content-footer clearfix">
+    <p class="footer-message">Generated by script</p>
+  </footer>
+</body>
+</html>
